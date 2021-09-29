@@ -1,7 +1,9 @@
-import os                                               # Импортируем библиотеку по работе с ОС
+import os
 import sys
 import traceback
-from re import findall                                  # Импортируем библиотеку по работе с регулярными выражениями
+
+# Импортируем библиотеку по работе с регулярными выражениями
+from re import findall
 
 
 def get_local_ip(interface):
@@ -24,12 +26,16 @@ try:
 
 except KeyboardInterrupt:
     # ...
-    print("Exit pressed Ctrl+C")                        # Выход из программы по нажатию Ctrl+C
+    # Выход из программы по нажатию Ctrl+C
+    print("Exit pressed Ctrl+C")
 except:
     # ...
-    print("Other Exception")                            # Прочие исключения
+    # Прочие исключения
+    print("Other Exception")
     print("--- Start Exception Data:")
-    traceback.print_exc(limit=2, file=sys.stdout)       # Подробности исключения через traceback
+    # Подробности исключения через traceback
+    traceback.print_exc(limit=2, file=sys.stdout)
     print("--- End Exception Data:")
 finally:
-    print("End of program")                             # Информируем о завершении работы программы
+    # Информируем о завершении работы программы
+    print("End of program")
