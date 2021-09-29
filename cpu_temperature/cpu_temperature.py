@@ -24,9 +24,11 @@ except KeyboardInterrupt:
 
 except:
     # ...
-    print("Other Exception")                        # Прочие исключения
+    # Прочие исключения
+    print("Other Exception")                       
     print("--- Start Exception Data:")
-    traceback.print_exc(limit=2, file=sys.stdout)   # Подробности исключения через traceback
+    # Подробности исключения через traceback
+    traceback.print_exc(limit=2, file=sys.stdout)   
     print("--- End Exception Data:")
 
 finally:
