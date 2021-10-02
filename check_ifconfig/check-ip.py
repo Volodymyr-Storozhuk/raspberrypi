@@ -19,8 +19,10 @@ def get_local_ip(interface):
 
 
 try:
+    # Проверяю локальное подключение
     cur_eth_ip = get_local_ip("eth0")
     print('eth0:  ', cur_eth_ip)
+    # Проверяю подключение по WiFi
     cur_wlan_ip = get_local_ip("wlan0")
     print('wlan0: ', cur_wlan_ip)
 
