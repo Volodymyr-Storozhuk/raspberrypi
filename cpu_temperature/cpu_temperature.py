@@ -15,7 +15,7 @@ def get_temp():
 try:
     while True:
         temp = get_temp()
-        print(temp)
+        print('CPU temperature: ' + str(temp))
         sleep(1)
 
 except KeyboardInterrupt:
