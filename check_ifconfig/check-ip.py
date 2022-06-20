@@ -40,4 +40,4 @@ except:
     print("--- End Exception Data:")
 finally:
     # Информируем о завершении работы программы
-    print("End of program")
+    print("End program")
