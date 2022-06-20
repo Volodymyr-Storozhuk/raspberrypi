@@ -12,7 +12,8 @@ def get_local_ip(interface):
     if interface == 'wlan0':
         local_ip = os.popen("ifconfig wlan0 | grep inet").readline()
     if len(local_ip) > 0:
-        local_ip = findall('\d+\.\d+.\d+.\d+', local_ip)[0]
+        local_ip = findall(r'\d+\.\d+.\d+.\d+', local_ip)[0]
+        print(local_ip)
     else:
         local_ip = 'disconnect'
     return(local_ip)
@@ -26,11 +27,12 @@ try:
     cur_wlan_ip = get_local_ip("wlan0")
     print('wlan0: ', cur_wlan_ip)
 
+
 except KeyboardInterrupt:
     # ...
     # Выход из программы по нажатию Ctrl+C
     print("Exit pressed Ctrl+C")
-except:
+except Exception:
     # ...
     # Прочие исключения
     print("Other Exception")
