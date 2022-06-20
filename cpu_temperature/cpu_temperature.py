@@ -8,7 +8,7 @@ from subprocess import check_output
 
 def get_temp():
     temp = check_output(["vcgencmd", "measure_temp"]).decode()
-    temp = float(findall('\d+\.\d+', temp)[0])
+    temp = float(findall(r'\d+\.\d+', temp)[0])
     return(temp)
 
 
@@ -22,7 +22,7 @@ except KeyboardInterrupt:
     # ...
     print('Exit pressed Ctrl+C')
 
-except:
+except Exception:
     # ...
     # Прочие исключения
     print("Other Exception")
@@ -33,4 +33,4 @@ except:
 
 finally:
     # ...
-    print('End of program')
+    print('End program')
