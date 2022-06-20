@@ -13,7 +13,6 @@ def get_local_ip(interface):
         local_ip = os.popen("ifconfig wlan0 | grep inet").readline()
     if len(local_ip) > 0:
         local_ip = findall(r'\d+\.\d+.\d+.\d+', local_ip)[0]
-        print(local_ip)
     else:
         local_ip = 'disconnect'
     return(local_ip)
