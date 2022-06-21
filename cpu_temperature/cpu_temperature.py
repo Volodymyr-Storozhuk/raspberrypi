@@ -17,11 +17,9 @@ try:
         temp = get_temp()
         print('CPU temperature: ' + str(temp))
         sleep(1)
-
 except KeyboardInterrupt:
     # ...
     print('Exit pressed Ctrl+C')
-
 except Exception:
     # ...
     # Прочие исключения
@@ -30,7 +28,6 @@ except Exception:
     # Подробности исключения через traceback
     traceback.print_exc(limit=2, file=sys.stdout)
     print("--- End Exception Data:")
-
 finally:
     # ...
     print('End program')

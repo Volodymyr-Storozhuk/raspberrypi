@@ -25,8 +25,6 @@ try:
     # Проверяю подключение по WiFi
     cur_wlan_ip = get_local_ip("wlan0")
     print('wlan0: ', cur_wlan_ip)
-
-
 except KeyboardInterrupt:
     # ...
     # Выход из программы по нажатию Ctrl+C
