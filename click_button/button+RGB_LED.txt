@@ -1,0 +1,10 @@
+[Button Swich - RobotDyn]
+GPIO.BCM.#24  -- Button.S
+GPIO.BCM.3.3v -- Button.VCC
+GPIO.BCM.GND  -- Button.GND
+
+[RGB LED]
+GPIO.BCM.#6   -- Led.Blue
+GPIO.BCM.#13  -- Led.Green
+GPIO.BCM.#19  -- Led.Red
+GPIO.BCM.GND  -- Led.GND

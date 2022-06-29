@@ -1,0 +1,6 @@
+GPIO.BCM.#24  -- Button.S
+GPIO.BCM.3.3v -- Button.VCC
+GPIO.BCM.GND  -- Button.GND
+
+GPIO.BCM.#6   -- Led.Blue (RGB LED)
+GPIO.BCM.GND  -- Led.GND

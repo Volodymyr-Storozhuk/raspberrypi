@@ -1,0 +1,3 @@
+GPIO.BCM.#24  -- Button.S
+GPIO.BCM.3.3v -- Button.VCC
+GPIO.BCM.GND  -- Button.GND
