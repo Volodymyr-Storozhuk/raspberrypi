@@ -8,8 +8,9 @@ pinBtn = 24
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(pinBtn, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
+
 # Секція функцій і класів defs, class
-if __name__ == '__main__':
+def main():
     try:
         # якщо потрібно постійно виконувати код до преривання программи через Ctrl+C
         while True:
@@ -31,3 +32,7 @@ if __name__ == '__main__':
         print("CleanUp")
         GPIO.cleanup()
         print("End of program")
+
+
+if __name__ == '__main__':
+    main()

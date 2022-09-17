@@ -3,6 +3,13 @@ import sys
 import traceback
 import RPi.GPIO as GPIO
 
+pinBtn = 24
+pinsLED = [19, 13, 6]
+cur_LED = 0
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(pinBtn, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+GPIO.setup(pinsLED, GPIO.OUT, initial=0)
+
 
 def pressButton():
     global cur_LED
@@ -46,10 +53,4 @@ def main():
 
 
 if __name__ == '__main__':
-    pinBtn = 24
-    pinsLED = [19, 13, 6]
-    cur_LED = 0
-    GPIO.setmode(GPIO.BCM)
-    GPIO.setup(pinBtn, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
-    GPIO.setup(pinsLED, GPIO.OUT, initial=0)
     main()
