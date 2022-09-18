@@ -1,0 +1,5 @@
+[RGB LED]
+GPIO.BCM.#6   -- Led.Blue
+GPIO.BCM.#13  -- Led.Green
+GPIO.BCM.#19  -- Led.Red
+GPIO.BCM.GND  -- Led.GND
