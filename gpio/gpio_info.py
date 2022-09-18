@@ -23,7 +23,7 @@ def check_GPIO_mode():
 
 
 def main():
-    # get_GPIO_info()
+    get_GPIO_info()
     check_GPIO_mode()
 
 
